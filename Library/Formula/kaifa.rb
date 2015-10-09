@@ -14,8 +14,8 @@ class Kaifa < Formula
 
     ENV["GOPATH"] = buildpath
 
-    system "gpm install"
-    system "go build kaifa.go"
+    system "gpm", "install"
+    system "go", "build", "kaifa.go"
     bin.install "kaifa"
   end
 
